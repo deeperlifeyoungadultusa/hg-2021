@@ -17,6 +17,7 @@ class Chat extends Component {
   };
 
   componentDidUpdate = () => {
+    // await this.props.verifyLogin();
     const { authenticated } = this.props.auth;
 
     if (!authenticated) {

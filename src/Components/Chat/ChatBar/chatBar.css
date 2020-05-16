@@ -11,8 +11,8 @@
 
 .text {
   -webkit-box-flex: 85%;
-  -ms-flex: 85%;
-  flex: 85%;
+      -ms-flex: 85%;
+          flex: 85%;
   background-color: #f5f5f5;
   outline: none;
   border: none;
@@ -21,11 +21,11 @@
 
 .submit {
   -webkit-box-flex: 15%;
-  -ms-flex: 15%;
-  flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: #5ea3d0;
   color: white;
   outline: none;

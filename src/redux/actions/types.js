@@ -5,4 +5,5 @@ module.exports = {
   LOGIN: "LOGIN",
   LOGIN_ERROR: "LOGIN_ERROR",
   VERIFY_LOGIN: "VERIFY_LOGIN",
+  SIGN_OUT: "SIGN_OUT",
 };
