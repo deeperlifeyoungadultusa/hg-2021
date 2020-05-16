@@ -1,0 +1,33 @@
+$colors:(
+    main-color: #5ea3d0,
+    secondary-color: white,
+    main-text-color: #3e5869,
+    secondary-text-color: #b0c7d6,
+    send-message-form: #F5F5F5,
+);
+
+@function color($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background-color: color(main-color);
+    color: color(secondary-color);
+}
+
+
+
+.logout {
+    background-color: color(secondary-color);
+    color: color(main-color);
+    font-size: 1rem;
+    margin-top: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+}

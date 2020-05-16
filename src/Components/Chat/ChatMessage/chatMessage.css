@@ -1,0 +1,14 @@
+.message {
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: #5ea3d0;
+  color: white;
+  padding: 1rem;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=chatMessage.css.map */

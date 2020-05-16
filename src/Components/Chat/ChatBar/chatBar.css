@@ -1,0 +1,34 @@
+.chatbar {
+  height: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chatbar input {
+  font-size: 1rem;
+}
+
+.text {
+  -webkit-box-flex: 85%;
+      -ms-flex: 85%;
+          flex: 85%;
+  background-color: #F5F5F5;
+  outline: none;
+  border: none;
+  padding: 15px;
+}
+
+.submit {
+  -webkit-box-flex: 15%;
+      -ms-flex: 15%;
+          flex: 15%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #5ea3d0;
+  color: white;
+  outline: none;
+  border: none;
+}
+/*# sourceMappingURL=chatBar.css.map */
