@@ -1,48 +1,55 @@
-import React, { Component } from 'react'
-import {connect} from 'react-redux';
-import {addMessage} from '../../../redux/actions/index';
-import './chatBar.css'
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { addMessage } from "../../../redux/actions/index";
+import "./chatBar.css";
 
 class ChatBar extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            text: ''
-        }
-    }
-    
-    onChange = e => {
-       this.setState({
-           text: e.target.value
-       })
-    }
+    this.state = {
+      text: "",
+    };
+  }
 
-    onClick = () => {
-        if(this.state.text !== '') {
-            const post = {
-                admin: true,
-                text: this.state.text
-            }
+  onChange = (e) => {
+    this.setState({
+      text: e.target.value,
+    });
+  };
 
-            this.setState({text: ''})
-            this.props.addMessage(post);
-        }
-    }
+  onClick = () => {
+    if (this.state.text.trim() !== "") {
+      const post = {
+        admin: true,
+        text: this.state.text,
+      };
 
-    render() {
-        return (
-            <div className="chatbar">
-                <input type="text" className="text" value={this.state.text} onChange={e => this.onChange(e)}/>
-                <input type="submit" className="submit" value="Enter" onClick={e => this.onClick()}/>
-            </div>
-        )
+      this.setState({ text: "" });
+      this.props.addMessage(post);
     }
+  };
+
+  render() {
+    return (
+      <div className="chatbar">
+        <input
+          type="text"
+          className="text"
+          value={this.state.text}
+          onChange={(e) => this.onChange(e)}
+        />
+        <input
+          type="submit"
+          className="submit"
+          value="Enter"
+          onClick={(e) => this.onClick()}
+        />
+      </div>
+    );
+  }
 }
 
-const mapStateToProps = state => ({})
+const mapStateToProps = (state) => ({});
 
-export default connect(
-    mapStateToProps,
-    {addMessage}
-)(ChatBar);
+export default connect(mapStateToProps, { addMessage })(ChatBar);

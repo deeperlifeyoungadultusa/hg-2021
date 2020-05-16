@@ -1,0 +1,41 @@
+$colors: (
+  main-color: #5ea3d0,
+  secondary-color: white,
+  main-text-color: #3e5869,
+  secondary-text-color: #b0c7d6,
+  send-message-form: #f5f5f5,
+);
+
+@function color($color-name) {
+  @return map-get($map: $colors, $key: $color-name);
+}
+
+.modal {
+  border: 1.5px solid #333;
+  box-shadow: 5px 5px #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 14px;
+  padding: 14px;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 14px;
+  }
+
+  button {
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    margin: 0.5rem;
+    background-color: color(secondary-color);
+    color: color(main-text-color);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

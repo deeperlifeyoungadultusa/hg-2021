@@ -1,37 +1,37 @@
-$colors:(
-    main-color: #5ea3d0,
-    secondary-color: white,
-    main-text-color: #3e5869,
-    secondary-text-color: #b0c7d6,
-    send-message-form: #F5F5F5,
+$colors: (
+  main-color: #5ea3d0,
+  secondary-color: white,
+  main-text-color: #3e5869,
+  secondary-text-color: #b0c7d6,
+  send-message-form: #f5f5f5,
 );
 
 @function color($color-name) {
-    @return map-get($map: $colors, $key: $color-name);
+  @return map-get($map: $colors, $key: $color-name);
 }
 
 .chatbar {
-    height: 10%;
-    display: flex;
+  height: 10vh;
+  display: flex;
 
-    input {
-        font-size: 1rem;
-    }
+  input {
+    font-size: 1rem;
+  }
 }
 
 .text {
-    flex: 85%;
-    background-color: color(send-message-form);
-    outline: none;
-    border: none;
-    padding: 15px;
+  flex: 85%;
+  background-color: color(send-message-form);
+  outline: none;
+  border: none;
+  padding: 15px;
 }
 
 .submit {
-    flex: 15%;
-    appearance: none;
-    background-color: color(main-color);
-    color: color(secondary-color);
-    outline: none;
-    border: none;
+  flex: 15%;
+  appearance: none;
+  background-color: color(main-color);
+  color: color(secondary-color);
+  outline: none;
+  border: none;
 }

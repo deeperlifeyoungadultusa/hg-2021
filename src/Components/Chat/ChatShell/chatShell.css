@@ -1,5 +1,6 @@
 .chat-messages {
-  height: 80%;
+  height: 80vh;
   overflow: scroll;
+  padding: 1.5rem;
 }
 /*# sourceMappingURL=chatShell.css.map */

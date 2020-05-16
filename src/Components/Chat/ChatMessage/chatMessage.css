@@ -11,4 +11,8 @@
   width: fit-content;
   word-wrap: break-word;
 }
+
+.message .messageText:hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=chatMessage.css.map */

@@ -1,0 +1,21 @@
+{
+  "name": "@bit/nerdswithcharisma.stiles.modal",
+  "version": "2.6.1",
+  "homepage": "https://bit.dev/nerdswithcharisma/stiles/modal",
+  "main": "dist/Modal/Modal.js",
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "@bit/nerdswithcharisma.stiles.media-queries": "2.6.1"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.13.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.17",
+      "tester": "bit.envs/testers/jest@22.4.3"
+    }
+  }
+}

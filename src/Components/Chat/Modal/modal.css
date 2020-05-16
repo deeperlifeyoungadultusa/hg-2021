@@ -1,4 +1,7 @@
-.title {
+.modal {
+  border: 1.5px solid #333;
+  -webkit-box-shadow: 5px 5px #333;
+          box-shadow: 5px 5px #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,24 +9,32 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 1.5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
-  background-color: #5ea3d0;
-  color: white;
+  margin: 14px;
+  padding: 14px;
+  text-align: center;
 }
 
-.logout {
+.modal h1 {
+  margin-bottom: 14px;
+}
+
+.modal button {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin: 0.5rem;
   background-color: white;
-  color: #5ea3d0;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  padding: 0.5rem;
+  color: #3e5869;
+}
+
+.modal button:hover {
   cursor: pointer;
 }
-/*# sourceMappingURL=header.css.map */
+/*# sourceMappingURL=modal.css.map */
