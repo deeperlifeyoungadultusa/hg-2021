@@ -21,6 +21,22 @@ $colors: (
   width: fit-content;
   word-wrap: break-word;
 
+  .admin {
+    margin-bottom: 0.5rem;
+  }
+
+  &-user {
+    background-color: darken(invert(color(main-text-color)), 28%);
+    color: color(secondary-color);
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 1rem;
+    border-radius: 30px;
+    width: fit-content;
+    word-wrap: break-word;
+  }
+
   .messageText:hover {
     cursor: pointer;
   }

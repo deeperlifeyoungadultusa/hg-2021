@@ -49,10 +49,11 @@ class ChatMessage extends Component {
   render() {
     const { message } = this.props;
     return (
-      <div className="message">
+      <div className={"message" + (!message.admin ? "-user" : "")}>
         {this.showModal()}
 
         <div className="messageText" onClick={(e) => this.handleModal(true)}>
+          {message.admin ? <p className="admin">Admin</p> : null}
           {message.text}
         </div>
       </div>

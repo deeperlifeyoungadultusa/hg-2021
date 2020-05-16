@@ -12,6 +12,24 @@
   word-wrap: break-word;
 }
 
+.message .admin {
+  margin-bottom: 0.5rem;
+}
+
+.message-user {
+  background-color: #7e5f4a;
+  color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 1rem;
+  border-radius: 30px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  word-wrap: break-word;
+}
+
 .message .messageText:hover {
   cursor: pointer;
 }
