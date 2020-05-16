@@ -2,7 +2,7 @@
   "name": "dlya",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://deeper-life-young-adults-usa.github.io/vision-2020-web",
+  "homepage": "https://deeperlifeyoungadultsusa.github.io/vision-2020-web",
   "dependencies": {
     "@bit/ans.base-ui.modal": "file:./components/modal",
     "@bit/nerdswithcharisma.stiles.modal": "file:./components/modal",
