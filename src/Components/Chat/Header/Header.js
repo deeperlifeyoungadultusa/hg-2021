@@ -24,17 +24,14 @@ class Header extends Component {
           Logout
         </div>
 
-        <div>
-          <label htmlFor="selectBreakout" className="selectBreakout">
-            Please select the message to filter by
-          </label>
+        <div className="filter">
           <select
             name="selectBreakout"
             id="selectBreakout"
             onChange={this.speakerSelect}
           >
             <option value="all" defaultChecked>
-              All
+              All Messages
             </option>
             <option value="Adu">
               Cultivating the Vision for Financial Freedom
