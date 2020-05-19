@@ -40,7 +40,7 @@ class Header extends Component {
               Cultivating the Vision for Financial Freedom
             </option>
             <option value="Ajayi">
-              The vision for Skill & Professional Development
+              The Vision for Skill & Professional Development
             </option>
             <option value="Ayanfe">
               Purposeful Vision of a Cristian Single
