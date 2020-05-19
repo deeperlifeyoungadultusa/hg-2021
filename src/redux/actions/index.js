@@ -5,6 +5,7 @@ import {
   SIGN_OUT,
   LOGIN_ERROR,
   GET_MESSAGES,
+  SELECT_SPEAKER,
 } from "./types";
 
 export const login = (email, password) => (dispatch) => {
@@ -79,3 +80,10 @@ export const deleteMessage = (id) => (dispatch) => {
 };
 
 export const addMessage = (message) => (dispatch) => messages.push(message);
+
+export const selectSpeaker = (speaker) => (dispatch) => {
+  dispatch({
+    type: SELECT_SPEAKER,
+    payload: speaker,
+  });
+};

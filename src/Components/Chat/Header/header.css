@@ -18,6 +18,12 @@
   color: white;
 }
 
+.title .selectBreakout {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
 .logout {
   background-color: white;
   color: #5ea3d0;

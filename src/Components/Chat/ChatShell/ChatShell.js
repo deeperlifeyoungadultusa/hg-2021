@@ -21,10 +21,45 @@ class ChatShell extends Component {
     });
   };
 
+  filterMessages = () => {
+    const { speaker } = this.props.speaker;
+    const { messages } = this.props.messages;
+
+    const aduFilter = "#1";
+    const ajayiFilter = "#2";
+    const ayanfeFilter = "#3";
+    const omotesoFilter = "#4";
+
+    switch (speaker) {
+      case "Adu": {
+        return messages.filter((message) =>
+          message[message.id].text.trim().startsWith(aduFilter)
+        );
+      }
+      case "Ajayi": {
+        return messages.filter((message) =>
+          message[message.id].text.trim().startsWith(ajayiFilter)
+        );
+      }
+      case "Ayanfe": {
+        return messages.filter((message) =>
+          message[message.id].text.trim().startsWith(ayanfeFilter)
+        );
+      }
+      case "Omoteso": {
+        return messages.filter((message) =>
+          message[message.id].text.trim().startsWith(omotesoFilter)
+        );
+      }
+      default:
+        return messages;
+    }
+  };
+
   render() {
     return (
       <div className="chat-messages" id="chat-messages">
-        {this.props.messages.messages.map((message) => (
+        {this.filterMessages().map((message) => (
           <ChatMessage
             key={message.id}
             id={message.id}
@@ -38,6 +73,7 @@ class ChatShell extends Component {
 
 const mapStateToProps = (state) => ({
   messages: state.messages,
+  speaker: state.speaker,
 });
 
 export default connect(mapStateToProps, { getMessages })(ChatShell);

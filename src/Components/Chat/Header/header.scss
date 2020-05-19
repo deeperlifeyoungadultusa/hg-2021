@@ -19,6 +19,12 @@ $colors: (
   height: 10vh;
   background-color: color(main-color);
   color: color(secondary-color);
+
+  .selectBreakout {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
 }
 
 .logout {
