@@ -42,7 +42,6 @@ class ChatMessage extends Component {
     );
 
     const modal = modalOpen ? <Modal>{modalInfo}</Modal> : "";
-
     return modal;
   };
 

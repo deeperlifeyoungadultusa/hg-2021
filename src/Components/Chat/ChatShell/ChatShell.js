@@ -15,9 +15,10 @@ class ChatShell extends Component {
     this.scrollToBottom();
   }
 
-  scrollToBottom = () => {
+  scrollToBottom = (container) => {
+    container = container || "chat-messages";
     animateScroll.scrollToBottom({
-      containerId: "chat-messages",
+      containerId: container,
     });
   };
 

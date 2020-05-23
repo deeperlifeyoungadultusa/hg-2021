@@ -24,7 +24,7 @@ class Header extends Component {
           Logout
         </div>
 
-        <div className="filter">
+        {/* <div className="filter">
           <select
             name="selectBreakout"
             id="selectBreakout"
@@ -46,7 +46,7 @@ class Header extends Component {
               Pursuing a Comprehensive Vision in the Family
             </option>
           </select>
-        </div>
+        </div> */}
       </div>
     );
   };
